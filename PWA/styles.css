@@ -1,0 +1,107 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0; /* Sin padding en el body */
+    display: flex;
+    flex-direction: column; /* Usar flexbox para organizar el layout */
+    min-height: 100vh; /* Asegura que el contenido principal ocupe toda la altura de la ventana */
+}
+
+/* Estilo del header */
+header {
+    background-color: #2980b9; /* Color de fondo del header */
+    color: white; /* Color del texto */
+    padding: 20px;
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo del nav */
+nav {
+    background-color: #3498db; /* Color de fondo del nav */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Sin padding */
+    display: flex; /* Usa flexbox para la navegación */
+    justify-content: center; /* Centra los elementos */
+}
+
+nav li {
+    margin: 0 15px; /* Espaciado entre los elementos */
+}
+
+nav a {
+    color: white; /* Color de texto de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s; /* Transición de color */
+}
+
+nav a:hover {
+    color: #f1c40f; /* Color al pasar el mouse */
+}
+
+/* Estilo para el contenedor principal */
+main {
+    flex: 1; /* Permite que el main ocupe el espacio restante */
+    padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+/* Estilo para los contenedores de usuario */
+.user-card {
+    border: none; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+}
+
+.user-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #1c598a;
+}
+
+/* Estilo del footer */
+footer {
+    background-color: #2980b9; /* Color de fondo del footer */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Espaciado */
+}
